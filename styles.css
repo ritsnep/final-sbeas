@@ -1,0 +1,175 @@
+/* Basic styles for the header */
+header {
+    background-color: #ffffff; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .flex.items-center.space-x-4 img {
+    height: 40px;
+}
+
+header .flex.items-center.space-x-4 h1 {
+    color: #333333; /* Dark text color for contrast */
+}
+
+nav a, nav button {
+    color: #333333; /* Dark text color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav button:hover {
+    color: #1e90ff; /* Change color on hover */
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem; /* Increase icon size */
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+}
+
+.menu a, .menu button {
+    margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hidden {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a, .menu button {
+        margin: 5px 0;
+    }
+}
+
+/* Additional styles for better alignment */
+nav .space-x-4 {
+    display: flex;
+    align-items: center;
+}
+
+nav .quote-btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav .quote-btn:hover {
+    background-color: #1c86ee;
+}
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    background-image: url('example_img_girl.jpg');
+}
+header {
+    background-color: #111827;
+    color: #ffffff;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/stability/58bd2d9f-73e1-499e-b892-671614e36660.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;            
+}
+#default-carousel
+{
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    
+}
+.hero button {
+    background-color: #1f2937;
+    border: 2px solid #3b82f6;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.hero button:hover {
+    background-color: #3b82f6;
+    border-color: #1f2937;
+}
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.section-content {
+    padding: 50px 20px;
+    text-align: center;
+}
+.services, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.footer {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+    }
+}
